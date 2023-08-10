@@ -1,0 +1,133 @@
+body {
+  background-color: #c7f1f6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.wide-text-input {
+  width: 50%;
+}
+.form-section,
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.output-section.show-result {
+  background-color: #c7f1f6;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.result.result-background {
+  background-color: #d1ecf1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #bce3eb;
+}
+
+.recent-strings ul,
+.ngram-results ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.recent-strings li,
+.ngram-results li {
+  margin-bottom: 5px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+.recent-item {
+  background-color: #e6f7ff;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+}
+.bullet-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.ngram-data {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.ngram-set-box {
+  flex: 1;
+  background-color: #e6f7ff;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.common-ngram-box {
+  background-color: #f4f8d5;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.ngram-result-box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.ngram-result-item {
+  flex-basis: calc(100% - 20px);
+  background-color: #fefefe;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.similarity {
+  background-color: #b3e3d0;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.similarity-item {
+  margin: 5px 0;
+}
+
+.result-box {
+  margin-top: 20px;
+}
+
+.result-box h2 {
+  margin-bottom: 10px;
+}
+.ngram-result-container {
+  width: 100%;
+}

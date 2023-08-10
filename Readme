@@ -1,0 +1,31 @@
+Project Architecture
+The project involves creating a web application that includes a backend built with ExpressJS, a React Progressive Web App (PWA), and a Django API server. These components communicate with each other to log connections, handle text input, generate ngrams comparisons, and provide an interactive user interface.
+
+Backend (ExpressJS)
+The ExpressJS backend is responsible for handling various functionalities, including logging connections, handling text input, and communicating with the frontend and Django API server. The backend's routes include:
+
+/api/log-connection: Logs frontend connections and inserts connection data into a MongoDB model.
+/api/connection-count: Retrieves the count of logged connections from the MongoDB model.
+/api/get-recent-strings: Fetches the most recent two text strings from the TextData MongoDB model.
+/api/submit-text-data: Inserts text data from the frontend into the TextData MongoDB model.
+/api/submit-text: A test route that simply responds with the received text.
+
+Frontend (React PWA)
+The React PWA provides a user interface where users can input text and interact with the backend. It communicates with the ExpressJS backend to send text input and display the received result. The frontend's main functionalities include:
+
+Text input field to input user text.
+"Submit" button to send the text input to the backend.
+Displaying the result received from the backend.
+Buttons to fetch recent strings and process ngrams comparisons.
+
+Django API Server
+The Django API server is responsible for processing ngrams comparisons using NLTK and providing the results to the frontend. The API endpoint for ngrams processing is:
+
+/api/process-ngrams: Accepts a list of strings from the frontend, calculates ngrams comparisons, and returns the results.
+
+Checklist
+✅ExpressJS backend for connection logging and text input handling.
+✅React PWA for user text input and dynamic UI changes.
+✅Django API server for ngrams comparison using NLTK.
+✅GitHub repository with branches and merge conflict resolution.
+✅Containerization of components using Docker (bonus task).
